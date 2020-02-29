@@ -1,29 +1,84 @@
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 80px;
-  background-image: url(../css/Images/background);
-}
-
-.navbar {
-  margin-bottom: 0;
+  background-image: url("../Images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron {
   position: relative;
-  width: 100%;
-  height: 500px;
-  padding: 0;
+  background-image: url("../images/lights.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px !important;
+  font-family: "Merienda One", cursive;
+  color: white;
 }
 
-.jumbotron .overlay {
-  background: linear-gradient(#333, black);
+.jumbotron > .overlay {
   position: absolute;
-  opacity: 0.7;
-  z-index: auto;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
+  background-color: rgb(119, 124, 133, 0.7);
+  z-index: 1;
+}
+
+.jumbotron > .inner {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  background-color: #b15ddfd6;
+}
+
+.card-header {
+  background-color: #b15ddfd6;
+}
+
+.delete-comment {
+  font-family: "Merienda One", cursive;
+  background-color: #b15ddfd6;
+  color: white;
+}
+
+.error {
+  font-family: "Merienda One", cursive;
+  background-color: #b15ddfd6;
+}
+
+a {
+  font-family: "Merienda One", cursive;
+  color: white;
+}
+
+a:hover {
+  font-family: "Merienda One", cursive;
+  color: black;
+}
+
+#home {
+  color: rgb(241, 234, 3);
+  text-decoration: underline;
+  font-family: "Merienda One", cursive;
+}
+
+#title-font {
+  font-family: "Merienda One", cursive;
+  color: white;
+  font-size: 4.5rem;
+}
+
+#lead-font {
+  font-family: "Merienda One", cursive;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: clear;
+  color: rgb(241, 234, 3);
+  font-size: medium;
 }
